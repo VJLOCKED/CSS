@@ -1,0 +1,26 @@
+.grr{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    background-color:#2196F3;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas:'header menu'
+    'content main' ;
+    grid-auto-flow: column;
+    grid-auto-columns: 50px;
+ 
+}
+
+.grr > div{
+    background-color:rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: content; }
